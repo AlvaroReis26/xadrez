@@ -16,6 +16,10 @@ namespace aula147
                 tab.ColocarPeca(new Rei(Cor.Branca, tab), new Posicao(0, 4));
                 */
             }
+            PosicaoXadrez px = new PosicaoXadrez('c', 4);
+            Console.WriteLine( px );
+            Console.WriteLine(px.ToPosicao());
+
             try
             {
                 tab.ColocarPeca(new Torre(Cor.Branca), new Posicao(0, 7));
