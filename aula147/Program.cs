@@ -1,4 +1,5 @@
 ﻿using System;
+using aula147.Tabuleiro;
 
 namespace aula147
 {
@@ -6,9 +7,9 @@ namespace aula147
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
-            Console.WriteLine("Teste commit");
+            Posicao P;
+            P = new Posicao(3, 4);
+            Console.WriteLine();
         }
     }
 }
