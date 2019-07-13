@@ -11,6 +11,8 @@ namespace aula147
             P = new Posicao(3, 4);
             Console.WriteLine();
             Tabuleiro t = new Tabuleiro(8,8);
+
+            Tela.ImprimirTabuleiro(t);
         }
     }
 }

@@ -16,5 +16,10 @@ namespace aula147.Tabuleiros
             Colunas = colunas;
             Pecas = new Peca[linhas, colunas];
         }
+
+        public Peca MovePeca(int linha, int coluna)// nome original peca()
+        {
+            return Pecas[linha, coluna];
+        }
     }
 }
