@@ -21,5 +21,11 @@ namespace aula147.Tabuleiros
         {
             return Pecas[linha, coluna];
         }
+
+        public void ColocarPeca(Peca p, Posicao pos)// instanciar peça
+        {
+            Pecas[pos.Linha, pos.Coluna] = p;// o tabuleiro recebe onde a peça vai ficar
+            p.Posicao = pos;// peça recebe a posição
+        }
     }
 }

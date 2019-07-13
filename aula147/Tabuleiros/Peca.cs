@@ -10,12 +10,20 @@ namespace aula147.Tabuleiros
         public Cor Cor { get; protected set; }
         public int QuantMovimentos { get; protected set; }
         public Tabuleiro Tabuleiro { get; protected set; }
-
+                
+        /*
         public Peca(Posicao posicao, Cor cor, Tabuleiro tabuleiro)
         {
             Posicao = posicao;
             Cor = cor;
             Tabuleiro = tabuleiro;
+            QuantMovimentos = 0;
+        }*/
+        
+        public Peca(Cor cor)
+        {
+            Posicao = null;
+            Cor = cor;           
             QuantMovimentos = 0;
         }
     }

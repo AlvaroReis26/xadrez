@@ -1,5 +1,6 @@
 ﻿using System;
 using aula147.Tabuleiros;
+using aula147.Tabuleiros.Xadrez;
 
 namespace aula147
 {
@@ -7,12 +8,18 @@ namespace aula147
     {
         static void Main(string[] args)
         {
-            Posicao P;
-            P = new Posicao(3, 4);
-            Console.WriteLine();
-            Tabuleiro t = new Tabuleiro(8,8);
-
-            Tela.ImprimirTabuleiro(t);
+            Tabuleiro tab = new Tabuleiro(8, 8);
+            {
+                /*
+                tab.ColocarPeca(new Torre(Cor.Branca, tab), new Posicao(0, 0));
+                tab.ColocarPeca(new Torre(Cor.Branca, tab), new Posicao(0, 7));
+                tab.ColocarPeca(new Rei(Cor.Branca, tab), new Posicao(0, 4));
+                */
+            }
+            tab.ColocarPeca(new Torre(Cor.Branca), new Posicao(0, 0));
+            tab.ColocarPeca(new Torre(Cor.Branca), new Posicao(0, 7));
+            tab.ColocarPeca(new Rei(Cor.Branca), new Posicao(0, 4));
+            Tela.ImprimirTabuleiro(tab);
         }
     }
 }

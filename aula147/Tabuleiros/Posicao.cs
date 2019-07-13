@@ -4,7 +4,7 @@ using System.Text;
 
 namespace aula147.Tabuleiros
 {
-    class Posicao
+    class Posicao // tenter deixa como struct para testar o resultado
     {
         public int Linha { get; set; }
         public int Coluna { get; set; }
