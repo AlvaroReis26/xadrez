@@ -1,5 +1,5 @@
 ﻿using System;
-using aula147.Tabuleiro;
+using aula147.Tabuleiros;
 
 namespace aula147
 {
@@ -10,6 +10,7 @@ namespace aula147
             Posicao P;
             P = new Posicao(3, 4);
             Console.WriteLine();
+            Tabuleiro t = new Tabuleiro(8,8);
         }
     }
 }

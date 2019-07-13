@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace aula147.Tabuleiro
+namespace aula147.Tabuleiros
 {
     class Posicao
     {
