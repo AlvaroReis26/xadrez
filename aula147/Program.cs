@@ -16,10 +16,17 @@ namespace aula147
                 tab.ColocarPeca(new Rei(Cor.Branca, tab), new Posicao(0, 4));
                 */
             }
-            tab.ColocarPeca(new Torre(Cor.Branca), new Posicao(0, 0));
-            tab.ColocarPeca(new Torre(Cor.Branca), new Posicao(0, 7));
-            tab.ColocarPeca(new Rei(Cor.Branca), new Posicao(0, 4));
-            Tela.ImprimirTabuleiro(tab);
+            try
+            {
+                tab.ColocarPeca(new Torre(Cor.Branca), new Posicao(0, 7));
+                tab.ColocarPeca(new Torre(Cor.Branca), new Posicao(0, 7));
+                tab.ColocarPeca(new Rei(Cor.Branca), new Posicao(0, 4));
+                Tela.ImprimirTabuleiro(tab);
+            }
+            catch (TabuleiroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
