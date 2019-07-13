@@ -7,6 +7,8 @@ namespace aula147
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Console.WriteLine("Teste commit");
         }
     }
 }
